@@ -22,6 +22,10 @@
 		144CD1962EFFF60E008B749E /* FitnessTracker_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1952EFFF60E008B749E /* FitnessTracker_Watch_AppTests.swift */; };
 		144CD1A02EFFF60E008B749E /* FitnessTracker_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD19F2EFFF60E008B749E /* FitnessTracker_Watch_AppUITests.swift */; };
 		144CD1A22EFFF60E008B749E /* FitnessTracker_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1A12EFFF60E008B749E /* FitnessTracker_Watch_AppUITestsLaunchTests.swift */; };
+		144CD1C22EFFFC3A008B749E /* FitnessTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1C02EFFFC3A008B749E /* FitnessTracker.xcdatamodeld */; };
+		144CD1C32EFFFC3A008B749E /* FitnessTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1C02EFFFC3A008B749E /* FitnessTracker.xcdatamodeld */; };
+		144CD1C52EFFFD21008B749E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1C42EFFFD21008B749E /* Persistence.swift */; };
+		144CD1C62EFFFD21008B749E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1C42EFFFD21008B749E /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,8 @@
 		144CD19B2EFFF60E008B749E /* FitnessTracker Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessTracker Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		144CD19F2EFFF60E008B749E /* FitnessTracker_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTracker_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		144CD1A12EFFF60E008B749E /* FitnessTracker_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTracker_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		144CD1C12EFFFC3A008B749E /* FitnessTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessTracker.xcdatamodel; sourceTree = "<group>"; };
+		144CD1C42EFFFD21008B749E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +255,7 @@
 		144CD1B82EFFF63C008B749E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				144CD1C02EFFFC3A008B749E /* FitnessTracker.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 		144CD1BB2EFFF653008B749E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				144CD1C42EFFFD21008B749E /* Persistence.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -530,6 +538,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				144CD15F2EFFF60B008B749E /* ContentView.swift in Sources */,
+				144CD1C52EFFFD21008B749E /* Persistence.swift in Sources */,
+				144CD1C22EFFFC3A008B749E /* FitnessTracker.xcdatamodeld in Sources */,
 				144CD15D2EFFF60B008B749E /* FitnessTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +566,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				144CD1872EFFF60C008B749E /* ContentView.swift in Sources */,
+				144CD1C62EFFFD21008B749E /* Persistence.swift in Sources */,
+				144CD1C32EFFFC3A008B749E /* FitnessTracker.xcdatamodeld in Sources */,
 				144CD1852EFFF60C008B749E /* FitnessTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,7 +796,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FitnessTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessTracker/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessTracker;
@@ -816,7 +828,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FitnessTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessTracker/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessTracker;
@@ -1068,6 +1080,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		144CD1C02EFFFC3A008B749E /* FitnessTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				144CD1C12EFFFC3A008B749E /* FitnessTracker.xcdatamodel */,
+			);
+			currentVersion = 144CD1C12EFFFC3A008B749E /* FitnessTracker.xcdatamodel */;
+			path = FitnessTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 144CD1512EFFF60A008B749E /* Project object */;
 }
