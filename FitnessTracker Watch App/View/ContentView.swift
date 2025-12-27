@@ -8,19 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var connectivity = ConnectivityManager.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            if connectivity.watchActivities.isEmpty {
+                VStack {
+                    Image(systemName: "iphone.gen3")
+                        .font(.largeTitle)
+                        .padding()
+                    Text("Otevři aplikaci na iPhone\npro synchronizaci.")
+                        .multilineTextAlignment(.center)
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+            } else {
+                // Seznam aktivit -> vede na detail
+                List(connectivity.watchActivities, id: \.self) { activityName in
+                    NavigationLink(destination: WatchDetailView(activityName: activityName)) {
+                        Text(activityName)
+                            .font(.headline)
+                            .padding(.vertical, 8)
+                    }
+                }
+                .navigationTitle("Fitness")
+            }
         }
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

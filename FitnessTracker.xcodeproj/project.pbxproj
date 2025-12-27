@@ -33,6 +33,10 @@
 		144CD1CF2F0003D0008B749E /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1CE2F0003D0008B749E /* ActivityRow.swift */; };
 		144CD1D02F0003D0008B749E /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1CE2F0003D0008B749E /* ActivityRow.swift */; };
 		144CD1D22F001C8E008B749E /* BallAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1D12F001C8E008B749E /* BallAnimationView.swift */; };
+		144CD1D72F0026C0008B749E /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1D62F0026C0008B749E /* ConnectivityManager.swift */; };
+		144CD1D82F0026C0008B749E /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1D62F0026C0008B749E /* ConnectivityManager.swift */; };
+		144CD1DD2F00296E008B749E /* WatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1DC2F00296E008B749E /* WatchDetailView.swift */; };
+		144CD1DE2F00296E008B749E /* WatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144CD1DC2F00296E008B749E /* WatchDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +119,8 @@
 		144CD1CC2F0003A8008B749E /* RecordExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordExerciseView.swift; sourceTree = "<group>"; };
 		144CD1CE2F0003D0008B749E /* ActivityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRow.swift; sourceTree = "<group>"; };
 		144CD1D12F001C8E008B749E /* BallAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallAnimationView.swift; sourceTree = "<group>"; };
+		144CD1D62F0026C0008B749E /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		144CD1DC2F00296E008B749E /* WatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				144CD1C42EFFFD21008B749E /* Persistence.swift */,
+				144CD1D62F0026C0008B749E /* ConnectivityManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				144CD1862EFFF60C008B749E /* ContentView.swift */,
+				144CD1DC2F00296E008B749E /* WatchDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				144CD15F2EFFF60B008B749E /* ContentView.swift in Sources */,
+				144CD1DD2F00296E008B749E /* WatchDetailView.swift in Sources */,
 				144CD1CF2F0003D0008B749E /* ActivityRow.swift in Sources */,
 				144CD1C52EFFFD21008B749E /* Persistence.swift in Sources */,
 				144CD1C22EFFFC3A008B749E /* FitnessTracker.xcdatamodeld in Sources */,
@@ -562,6 +571,7 @@
 				144CD1CD2F0003A8008B749E /* RecordExerciseView.swift in Sources */,
 				144CD1CB2F000383008B749E /* AddExerciseView.swift in Sources */,
 				144CD1C82F0002E3008B749E /* Activity+Logic.swift in Sources */,
+				144CD1D72F0026C0008B749E /* ConnectivityManager.swift in Sources */,
 				144CD1D22F001C8E008B749E /* BallAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +602,9 @@
 				144CD1C32EFFFC3A008B749E /* FitnessTracker.xcdatamodeld in Sources */,
 				144CD1852EFFF60C008B749E /* FitnessTrackerApp.swift in Sources */,
 				144CD1C92F0002E3008B749E /* Activity+Logic.swift in Sources */,
+				144CD1DE2F00296E008B749E /* WatchDetailView.swift in Sources */,
 				144CD1D02F0003D0008B749E /* ActivityRow.swift in Sources */,
+				144CD1D82F0026C0008B749E /* ConnectivityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
