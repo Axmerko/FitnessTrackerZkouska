@@ -174,10 +174,12 @@
 		144CD15B2EFFF60B008B749E /* FitnessTracker */ = {
 			isa = PBXGroup;
 			children = (
+				144CD1BC2EFFF65D008B749E /* Resources */,
+				144CD1BB2EFFF653008B749E /* Managers */,
+				144CD1BA2EFFF64B008B749E /* View */,
+				144CD1B92EFFF643008B749E /* ViewModel */,
+				144CD1B82EFFF63C008B749E /* Model */,
 				144CD15C2EFFF60B008B749E /* FitnessTrackerApp.swift */,
-				144CD15E2EFFF60B008B749E /* ContentView.swift */,
-				144CD1602EFFF60C008B749E /* Assets.xcassets */,
-				144CD1622EFFF60C008B749E /* Preview Content */,
 			);
 			path = FitnessTracker;
 			sourceTree = "<group>";
@@ -210,9 +212,10 @@
 		144CD1832EFFF60C008B749E /* FitnessTracker Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				144CD1BF2EFFF6E4008B749E /* Resources */,
+				144CD1BE2EFFF6DB008B749E /* ViewModel */,
+				144CD1BD2EFFF6D3008B749E /* View */,
 				144CD1842EFFF60C008B749E /* FitnessTrackerApp.swift */,
-				144CD1862EFFF60C008B749E /* ContentView.swift */,
-				144CD1882EFFF60E008B749E /* Assets.xcassets */,
 				144CD18A2EFFF60E008B749E /* Preview Content */,
 			);
 			path = "FitnessTracker Watch App";
@@ -241,6 +244,67 @@
 				144CD1A12EFFF60E008B749E /* FitnessTracker_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "FitnessTracker Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		144CD1B82EFFF63C008B749E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		144CD1B92EFFF643008B749E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		144CD1BA2EFFF64B008B749E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				144CD15E2EFFF60B008B749E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		144CD1BB2EFFF653008B749E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		144CD1BC2EFFF65D008B749E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				144CD1622EFFF60C008B749E /* Preview Content */,
+				144CD1602EFFF60C008B749E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		144CD1BD2EFFF6D3008B749E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				144CD1862EFFF60C008B749E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		144CD1BE2EFFF6DB008B749E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		144CD1BF2EFFF6E4008B749E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				144CD1882EFFF60E008B749E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

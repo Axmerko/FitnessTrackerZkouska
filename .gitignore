@@ -1,0 +1,13 @@
+## CoreData
+*.xccheckout
+*.moved-aside
+*.xcdatamodel
+*.xcmappingmodel
+
+## User settings
+xcuserdata/
+
+## Checkpoints
+*.xcscmblueprint
+*.xccheckout
+*.xcuserstate
